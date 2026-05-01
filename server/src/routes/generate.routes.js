@@ -31,8 +31,11 @@ router.post("/", async (req, res) => {
           headers: {
             Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
 
-            "Content-Type":
-              "application/json",
+            "Content-Type": "application/json",
+
+            "HTTP-Referer": "https://nxtbuild-ai-web-app-builder.vercel.app",
+
+            "X-Title": "NxtBuild",
           },
 
           body: JSON.stringify({
