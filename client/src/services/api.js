@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 
 const api = axios.create({
   baseURL:
-    "http://localhost:5000/api",
+    "https://nxtbuild-ai-web-app-builder-backend.onrender.com/api",
 
   headers: {
     "Content-Type":
