@@ -1,0 +1,193 @@
+/* ================= NAVBAR ================= */
+
+.navbar {
+  height: 64px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 24px;
+
+  background: white;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  flex-shrink: 0;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ================= LEFT ================= */
+
+.navbar-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 32px;
+}
+
+.navbar-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-family: "Bree Serif", serif;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+  user-select: none;
+}
+
+.navbar-brand-mark {
+  color: #6366f1;
+
+  font-size: 18px;
+}
+
+.navbar-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.navbar-link {
+  border: none;
+
+  background: transparent;
+
+  padding: 9px 16px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #6b7280;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.navbar-link:hover {
+  background: #f3f4f6;
+
+  color: #6366f1;
+}
+
+.navbar-link.active {
+  background: #6366f1;
+
+  color: white;
+}
+
+/* ================= RIGHT ================= */
+
+.navbar-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.navbar-user-badge {
+  width: 36px;
+
+  height: 36px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #ede9fe;
+
+  color: #6366f1;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.navbar-username {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.navbar-logout {
+  border: 1px solid #e5e7eb;
+
+  background: white;
+
+  color: #6b7280;
+
+  padding: 8px 14px;
+
+  border-radius: 10px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.navbar-logout:hover {
+  border-color: #6366f1;
+
+  color: #6366f1;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .navbar-left {
+    gap: 16px;
+  }
+
+  .navbar-username {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-logout {
+    padding: 7px 10px;
+  }
+}
